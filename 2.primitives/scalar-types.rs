@@ -5,8 +5,10 @@ fn main(){
       float - f32, f64 (default)
       boolean - bool (1 byte)
       character - char (4 bytes)
-      unit type - ()
+      unit type - () (no value)
     */
+    
+    // bindings are immutable by default
     let b: bool = true;
 
     let f: f64 = 1.0;  // Regular annotation
@@ -23,4 +25,9 @@ fn main(){
 
     // Variables can be overwritten with shadowing.
     let mutable = true;
+
+    let _c = "asdf"; // silencing unused variable warning with _ prefix
+
+    let a;
+    // println!("Value of a: {:?}", a); // Error using uninitialized variable
 }
