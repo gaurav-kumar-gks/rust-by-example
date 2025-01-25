@@ -1,5 +1,5 @@
-fn main(){
-    /*  
+fn main() {
+    /*
       scalar types
       integers - u8, i8, u16, i16, u32, i32 (default), u64, i64, u128, i128
       float - f32, f64 (default)
@@ -7,11 +7,11 @@ fn main(){
       character - char (4 bytes)
       unit type - () (no value)
     */
-    
+
     // bindings are immutable by default
     let b: bool = true;
 
-    let f: f64 = 1.0;  // Regular annotation
+    let f: f64 = 1.0; // Regular annotation
     let i = 5i32; // Suffix annotation
 
     // A type can also be inferred from context.
@@ -30,4 +30,13 @@ fn main(){
 
     let a;
     // println!("Value of a: {:?}", a); // Error using uninitialized variable
+
+    /*
+
+    let s = String::from("hello"); // owned + immutable
+    let mut s = String::from("hello"); // owned + mutable
+    let s = "hello"; // borrowed + immutable
+    let mut s = "hello"; // borrowed + mutable
+
+     */
 }
